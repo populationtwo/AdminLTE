@@ -18,11 +18,12 @@
 //MISC
 //----
 @import "variables";
-@import "core.scss";
-//@import "mixins.less";
-////COMPONENTS
-////-----------
-//@import "header.less";
+@import "core";
+@import "mixins";
+
+//COMPONENTS
+//-----------
+@import "header";
 //@import "sidebar.less";
 //@import "sidebar-mini.less";
 //@import "control-sidebar.less";
