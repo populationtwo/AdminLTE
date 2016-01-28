@@ -7,8 +7,8 @@
   min-height: 90px;
   background: #fff;
   width: 100%;
-  box-shadow: @box-boxshadow;
-  .border-radius(2px);
+  box-shadow: $box-boxshadow;
+  border-radius: 2px;
   margin-bottom: 15px;
   small {
     font-size: 14px;
@@ -19,7 +19,7 @@
     height: 2px;
     &,
     & .progress-bar {
-      .border-radius(0);
+      border-radius: 0;
     }
     .progress-bar {
       background: #fff;
@@ -28,7 +28,8 @@
 }
 
 .info-box-icon {
-  .border-radius(2px; 0; 2px; 0);
+  @include border-top-radius(2px);
+  @include border-bottom-radius(2px);
   display: block;
   float: left;
   height: 90px;
