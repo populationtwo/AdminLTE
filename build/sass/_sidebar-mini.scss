@@ -4,8 +4,8 @@
 
 //Add sidebar-mini class to the body tag to activate this feature
 .sidebar-mini {
-  //Sidebar mini should work only on devices larger than @screen-sm
-  @media (min-width: @screen-sm) {
+  //Sidebar mini should work only on devices larger than $screen-sm
+  @media (min-width: $screen-sm) {
     //When the sidebar is collapsed...
     &.sidebar-collapse {
 
@@ -20,7 +20,7 @@
       //Modify the sidebar to shrink instead of disappearing
       .main-sidebar {
         //Don't go away! Just shrink
-        .translate(0, 0);
+        @include translate(0, 0);
         width: 50px !important;
         z-index: 850;
       }
@@ -57,7 +57,7 @@
             > .treeview-menu {
               display: block !important;
               position: absolute;
-              width: @sidebar-width - 50;
+              width: $sidebar-width - 50;
               left: 50px;
             }
 
